@@ -1,0 +1,44 @@
+{
+  "name": "tools",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "pub": "node ./lib/cli/index.js --help",
+    "pub1":"node tools --cheese tianqibucuo",
+    "start": "node build/server.js",
+    "prod": "webpack --config build/webpack.production.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/edenliang/tools.git"
+  },
+  "author": "eden",
+  "license": "ISC",
+  "bin":{
+    "tools":"./bin/tools.js"
+  },
+  "bugs": {
+    "url": "https://gitlab.com/edenliang/tools/issues"
+  },
+  "homepage": "https://gitlab.com/edenliang/tools#README",
+  "dependencies": {
+    "colorful": "^2.1.0",
+    "commander": "^2.11.0",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^7.0.0",
+    "gulp-clean": "^0.3.2",
+    "shelljs": "^0.7.8",
+    "webpack": "^3.6.0",
+    "webpack-stream": "^4.0.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-latest": "^6.24.1",
+    "open": "0.0.5",
+    "webpack-dev-server": "^2.8.2"
+  }
+}
